@@ -1,7 +1,7 @@
 <template>
     <nav class="header">
         <div class="max-size">
-            <img alt="Vue logo" src="../../assets/foodiesLogo.svg"  height="100%" width="148px" />
+            <img alt="Foodies logo" src="../../assets/foodiesLogo.svg"  height="100%" width="148px" />
             <input class="menu-btn" type="checkbox" id="menu-btn" v-model="checked"  />
             <label class="menu-icon" htmlFor="menu-btn" @click="checked = !checked"><span class="navicon"></span></label>
             <ul class="menu">
