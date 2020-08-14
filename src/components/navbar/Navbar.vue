@@ -1,7 +1,7 @@
 <template>
     <nav class="header">
         <div class="max-size">
-            <img alt="Vue logo" src="../assets/foodiesLogo.svg"  height="100%" width="148px" />
+            <img alt="Foodies logo" src="../../assets/foodiesLogo.svg"  height="100%" width="148px" />
             <input class="menu-btn" type="checkbox" id="menu-btn" v-model="checked"  />
             <label class="menu-icon" htmlFor="menu-btn" @click="checked = !checked"><span class="navicon"></span></label>
             <ul class="menu">
@@ -107,7 +107,6 @@ export default {
         padding: 0;
         list-style: none;
         overflow: hidden;
-        background-color: @white;
         @media (max-width: @tabSize) {
             border-bottom-left-radius: @borderRadius;
             border-bottom-right-radius: @borderRadius;
@@ -229,13 +228,13 @@ export default {
     }
 
     li:after {
+        opacity: 50% !important;
         position: absolute;
         content: "";
         top: 50%;
         height: 4px;
         border-bottom: 6px solid #ffd600;
         transform: scale(0);
-        opacity: 50%;
         @media (max-width: @tabSize) {
             left: @leftRoutes;
         }
